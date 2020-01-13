@@ -1,0 +1,36 @@
+{
+  "name": "tiny-scholar-api",
+  "version": "0.0.0",
+  "description": "this is tiny scholar api that lets you fetch bibligraphic data from google scholar.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ResearcherOne/tiny-scholar-api.git"
+  },
+  "keywords": [
+    "scholar",
+    "google",
+    "api",
+    "tiny"
+  ],
+  "author": "birkan kolcu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ResearcherOne/tiny-scholar-api/issues"
+  },
+  "homepage": "https://github.com/ResearcherOne/tiny-scholar-api#readme",
+  "dependencies": {
+    "bibtex-parse": "^2.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-slow-down": "^1.3.1",
+    "persistent-cache": "^1.1.1",
+    "puppeteer": "^2.0.0",
+    "puppeteer-extra": "^3.1.7",
+    "puppeteer-extra-plugin-stealth": "^2.4.5",
+    "telegraf": "^3.35.0"
+  }
+}

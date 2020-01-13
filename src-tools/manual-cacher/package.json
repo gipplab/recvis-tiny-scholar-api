@@ -1,0 +1,23 @@
+{
+  "name": "manual-cacher",
+  "version": "0.0.0",
+  "description": "manual caching utility for tiny-scholar-api",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "manual",
+    "cache",
+    "caching",
+    "tiny",
+    "scholar",
+    "api"
+  ],
+  "author": "birkan kolcu",
+  "license": "MIT",
+  "dependencies": {
+    "bibtex-parse": "^2.0.0",
+    "persistent-cache": "^1.1.1"
+  }
+}

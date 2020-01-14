@@ -1,6 +1,5 @@
 const config = require("./config.js");
 const loggerModule = require("./logger-module.js");
-const NotifierBot = require("./NotifierBot.js");
 
 const express = require('express')
 const app = express()
@@ -9,18 +8,6 @@ const stealthyGoogleScrapper = require("./stealthyScholarScrapper_v0.2.js");
 
 var cache = require('persistent-cache');
 const slowDown = require("express-slow-down");
-
-var notifierBot = null;
-if(config.TELEGRAM_IS_BOT_ACTIVE) {
-    notifierBot = new NotifierBot(config.TELEGRAM_SECRET_TOKEN, config.TELEGRAM_ID_LIST_TO_BE_NOTIFIED, config.TELEGRAM_HELP_TEXT);
-    notifierBot.setErrorHandler(function(err){
-        console.log("Notifier bot error: "+err);
-    })
-    loggerModule.on("all", function(message){
-        notifierBot.notifyUsers(message);
-    })
-}
-
 
 const PORT = config.TINY_SCHOLAR_PORT;
 const delayWindowMinute = config.DELAY_WINDOW_MIN;

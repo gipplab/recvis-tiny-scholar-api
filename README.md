@@ -1,4 +1,4 @@
-# hyplag-recvis-tiny-scholar-api
+# recvis-tiny-scholar-api
 
 ## About Tiny Scholar API
 - This project is meant to be used as very small unofficial Google Scholar API for fetching bibliographic data based on input academic paper title. This API painfully slows down requests down to one request per 2 minute because Google Scholar is aggressively blocking the fetching process otherwise. Tiny Scholar API, whenever successfully fetching process happens, caches the request and doesn't count it towards API fetching limit of one document per 2 minutes.  

@@ -6,12 +6,20 @@
 ## Deployment/Development Tiny Scholar API
 ### Configuration of front-end.
 - cd /path/to/repo
-- nano config.js
+
+
+- Configuration of backend
+    cd /path/to/repo
+    cd src
+    cp env.example ./.env
+    vim .env 
     - Set TINY_SCHOLAR_PORT
     - Set DELAY_WINDOW_MIN, at the end of this window, request count will be resetted for the incoming IP address.
     - Set DELAY_AFTER_NUMBER_OF_REQ
     - Set DELAY_MINUTES
     - Set SERVE_ONLY_CACHE, this option will make Tiny Scholar API serve only from cache.
+    - Set TELEGRAM_XYZ for telegram notifications
+
 
 ### Install libraries
 - npm install
